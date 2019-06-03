@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../dist/style/weui.css" />
+		<link rel="stylesheet" href="../dist/style/weui.min.css" />
+		<link rel="stylesheet" href="../css/font.css" />
+		<style>
+			body{
+				background: #EDEDED;
+			}
+			.slide{
+				padding-left: 20px;
+				box-sizing: border-box;
+				background: #EDEDED;
+			}
+			.header{
+				width:100%;
+				display:flex;
+				height: 40px;
+				line-height: 40px;
+			}
+			.header .left{
+				width:80%;
+			}
+			.header .right{
+				width:20%;
+				display: flex;
+				justify-content: space-around;
+			}
+			.text{
+				font-size: 16px;
+				color:#999999;
+				background:#EDEDED;
+				padding-left:20px;
+				box-sizing: border-box;
+				line-height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="slide">
+				<div class="header">
+					<div class="left">
+						<span>通讯录</span>
+					</div>
+					<div class="right">
+						<span class="iconfont">&#xe60f;</span>
+						<span class="iconfont">&#xe84f;</span>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells" style="margin-top:0;">
+	            <div class="weui-cell weui-cell_example">
+	                <div class="weui-cell__hd" style="background:#F39F43;border-radius: 4px;">
+	                	<span class="iconfont" style="width:100%;color:white;text-align: center;margin-right:16px;display:block;font-size: 26px" >&#xe746;</i>
+	                	<!--<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:16px;display:block">-->
+	                </div>
+	                <div class="weui-cell__bd" style="margin-left: 20px; font-size: 16px;">
+	                    <p>新的朋友</p>
+	                </div>
+	            </div>
+	            <div class="weui-cell weui-cell_example">
+	                <div class="weui-cell__hd" style="background:#0CBF5D;border-radius: 4px;">
+	                	<span class="iconfont" style="width:100%;color:white;text-align: center;margin-right:16px;display:block;font-size: 26px" >&#xe611;</i>
+	                	<!--<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:16px;display:block">-->
+	                </div>
+	                <div class="weui-cell__bd" style="margin-left: 20px; font-size: 16px;">
+	                    <p>群聊</p>
+	                </div>
+	            </div>
+	            <div class="weui-cell weui-cell_example">
+	                <div class="weui-cell__hd" style="background:#2781D7;border-radius: 4px;">
+	                	<span class="iconfont" style="width:100%;color:white;text-align: center;margin-right:16px;display:block;font-size: 26px">&#xe61f;</i>
+	                	<!--<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:16px;display:block">-->
+	                </div>
+	                <div class="weui-cell__bd" style="margin-left: 20px; font-size: 16px;">
+	                    <p>标签</p>
+	                </div>
+	            </div>
+	            <div class="weui-cell weui-cell_example">
+	                <div class="weui-cell__hd" style="background:#2781D7;border-radius: 4px;">
+	                	<span class="iconfont" style="width:100%;color:white;text-align: center;margin-right:16px;display:block;font-size: 26px" >&#xe613;</i>
+	                	<!--<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:16px;display:block">-->
+	                </div>
+	                <div class="weui-cell__bd" style="margin-left: 20px; font-size: 16px;">
+	                    <p>公众号</p>
+	                </div>
+	            </div>
+	        </div>
+			<div class="text">
+				<span>朋友</span>
+			</div>
+			<div class="weui-cells" style="margin-top:0;">
+	            <div class="weui-cell weui-cell_example">
+	                <div class="weui-cell__hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:16px;display:block"></div>
+	                <div class="weui-cell__bd">
+	                    <p>朋友1</p>
+	                </div>
+	            </div>
+	            <div class="weui-cell weui-cell_example">
+	                <div class="weui-cell__hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:16px;display:block"></div>
+	                <div class="weui-cell__bd">
+	                    <p>朋友2</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+</html>
+<script src="../../../zepto.js"></script>

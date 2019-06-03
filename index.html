@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="dist/style/weui.css" />
+		<link rel="stylesheet" href="dist/style/weui.min.css" />
+		<link rel="stylesheet" href="css/font.css" />
+		<style>
+			.buttom{
+				position:fixed;
+				bottom:0;
+				display:flex;
+				width:100%;
+			}
+		</style>
+	</head>
+	<body ontouchstart>
+		<div class="page">
+		    <div class="page__bd" style="height: 100%;">
+		        <div class="weui-tab">
+		            <div class="weui-tab__panel">
+		            	<iframe src="fenye/weixin.html" width="100%" height="740px" name="content"  frameborder="0">
+		        			<div class="weui-tab__panel">
+				            	<iframe src="fenye/link.html" width="100%" height="740px" name="content"  frameborder="0">
+				        			<div class="weui-tab__panel">
+						            	<iframe src="fenye/faxian.html" width="100%" height="740px" name="content"  frameborder="0">
+						        			<div class="weui-tab__panel">
+								            	<iframe src="fenye/wo.html" width="100%" height="740px" name="content"  frameborder="0">
+								        			
+								        		</iframe>
+								            </div>
+						        		</iframe>
+						            </div>
+				        		</iframe>
+				            </div>
+		        		</iframe>
+		            </div>
+		            <div class="weui-tabbar buttom">
+		                <a href="fenye/weixin.html" target="content" class="weui-tabbar__item weui-bar__item_on">
+		                    <span style="display: inline-block;position: relative;">
+		                        <!--<img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">-->
+		                        <i class="iconfont weui-tabbar__icon">&#xe62d;</i>
+		                        <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">1</span>
+		                    </span>
+		                    <p class="weui-tabbar__label">微信</p>
+		                </a>
+		                <a href="fenye/link.html" class="weui-tabbar__item" target="content">
+		                    <!--<img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">-->
+		                    <i class="iconfont weui-tabbar__icon">&#xe6c2;</i>
+		                    <p class="weui-tabbar__label">通讯录</p>
+		                </a>
+		                <a href="fenye/faxian.html" class="weui-tabbar__item" target="content">
+		                    <span style="display: inline-block;position: relative;">
+		                        <!--<img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">-->
+		                        <i class="iconfont weui-tabbar__icon">&#xe609;</i>
+		                        <span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+		                    </span>
+		                    <p class="weui-tabbar__label">发现</p>
+		                </a>
+		                <a href="fenye/wo.html" class="weui-tabbar__item" target="content">
+		                    <!--<img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">-->
+		                    <i class="iconfont weui-tabbar__icon">&#xe62a;</i>
+		                    <p class="weui-tabbar__label">我</p>
+		                </a>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</body>
+</html>
+<script src="dist/example/zepto.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.weui-tabbar__item').on('click', function () {
+            $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+        });
+    });
+</script>
